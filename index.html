@@ -17,17 +17,13 @@
 
 		<form class="form-horizontal">
 			<input type="text">
-			<button class="btn">Search</button>
+			<button class="btn" ng-click="doSearch()">Search</button>
 		</form>
 
-		<ul class="list-group">
-			<li class="list-group-item">
-				<img src="https://avatars1.githubusercontent.com/u/4664049?v=3&s=460">
-				<a href="https://github.com/abridger">abridger</a>
-			</li>
-			<li class="list-group-item">
-				<img src="https://avatars0.githubusercontent.com/u/8863744?v=3&s=460">
-				<a href="https://github.com/mishal1">mishal1</a>
+		<ul class="list-group" ng-repeat="user in searchResult.items">
+			<li>
+				<img ng-src="{{user.avatar_url}}">
+				<a ng-href="{{user.html_url}}">{{user.login}}</a>
 			</li>
 
 	</section>
