@@ -14,7 +14,7 @@ describe('GitUserSearchController', function() {
     expect(scope.searchResult).toBeUndefined();
     expect(scope.searchTerm).toBeUndefined();
   });
-  
+
   describe('when searching for a user', function(){
     var items = [{"login": "mishal1",
         "avatar_url": "https://avatars0.githubusercontent.com/u/8863744?v=3&s=460",
@@ -25,8 +25,9 @@ describe('GitUserSearchController', function() {
       }];
 
       it('should display search results', function(){
+        scope.searchTerm = 'hello';
+        scope.doSearch();
         expect(scope.searchResult.items).toEqual(items);
       });
-  }); 
+  });
 });
-
