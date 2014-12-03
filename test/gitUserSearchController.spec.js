@@ -10,15 +10,11 @@ describe('GitUserSearchController', function() {
     })
   }));
 
-<<<<<<< HEAD
-
   it('should initialise with an empty search result and term', function(){
     expect(scope.searchResult).toBeUndefined();
     expect(scope.searchTerm).toBeUndefined();
   });
 
-=======
->>>>>>> a6ecead1d984ec26be3ab0d1c070a195cee59560
   describe('when searching for a user', function(){
   var httpBackend;
   beforeEach(inject(function($httpBackend) {
