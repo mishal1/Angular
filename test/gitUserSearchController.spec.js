@@ -10,12 +10,15 @@ describe('GitUserSearchController', function() {
     })
   }));
 
+<<<<<<< HEAD
 
   it('should initialise with an empty search result and term', function(){
     expect(scope.searchResult).toBeUndefined();
     expect(scope.searchTerm).toBeUndefined();
   });
 
+=======
+>>>>>>> a6ecead1d984ec26be3ab0d1c070a195cee59560
   describe('when searching for a user', function(){
   var httpBackend;
   beforeEach(inject(function($httpBackend) {
@@ -34,6 +37,22 @@ describe('GitUserSearchController', function() {
         "html_url": "https://github.com/abridger"
       }];
 
+    var httpBackend;
+
+    beforeEach(inject(function($httpBackend) {
+      httpBackend = $httpBackend
+      httpBackend
+      .when("GET", "https://api.github.com/search/users?q=hello")
+      .respond({
+        items: items
+      })
+    }));
+
+      it('should initialise with an empty search result and term', function(){
+        expect(scope.searchResult).toBeUndefined();
+        expect(scope.searchTerm).toBeUndefined();
+      });
+
       it('should display search results', function(){
         scope.searchTerm = 'hello';
         scope.doSearch();
@@ -41,6 +60,5 @@ describe('GitUserSearchController', function() {
         httpBackend.flush();
         expect(scope.searchResult.items).toEqual(items);
       });
-  }); 
+  });
 });
-
