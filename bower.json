@@ -1,10 +1,13 @@
 {
-  "name": "angular",
+
+  "name": "angular-github-report",
   "version": "0.0.0",
-  "homepage": "https://github.com/mishal1/Angular",
+  "homepage": "https://github.com/abridger/angular-github-report",
   "authors": [
-    "Mishal Islam <mishal.islam01@gmail.com>"
+    "Alan Bridger <alanrbridger@gmail.com>"
   ],
+  "description": "Makers Academy Week 6 Activity - rebuilding a GitHub user report app in Angular.js",
+
   "license": "MIT",
   "ignore": [
     "**/.*",
