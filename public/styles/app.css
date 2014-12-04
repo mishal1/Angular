@@ -1,0 +1,13 @@
+.form-control {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-block {
+  margin-bottom: 30px;
+}
+
+.list-group-item .img-circle {
+  width: 100px;
+  height: auto;
+}
