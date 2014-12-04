@@ -29,11 +29,28 @@
 			<button class="btn btn-primary btn-block" ng-click="doUserSearch()">Search</button>
 		</form>
 		<ul class="list-group" ng-repeat="user in userSearchResult.items">
-			<li class="list-group-item" ng-controller="GitRepoSearchController">
+			<li class="list-group-item" ng-controller="GitRepoListController">
+
 				<img class="img-circle" ng-src="{{user.avatar_url}}&s=50">
-				<h2><a ng-href="{{user.html_url}}">{{user.login}}</a></h2>
-					<p ng-click="doRepoSearch(user.login, 'takeaway')">Takeaway app</p>
-					<p>Stars: {{repoSearchResult.stargazers_count}}</p>
+
+				<h2>
+					<a ng-href="{{user.html_url}}">
+						{{user.login}}
+					</a>
+				</h2>
+
+				<button class="btn btn-primary" ng-click="getRepoList(user.login)">Show More</button>
+
+				<ul class="list-group list-unstyled" ng-repeat="repo in repoList">
+					<li ng-controller="GitRepoSearchController" ng-init="doRepoSearch(user.login, repo.name)">
+						<h3 ng-init="doRepoStatsSearch(user.login, repo.name)">{{repo.name}}</h3>
+						<p>Stars: {{repoSearchResult.stargazers_count}}</p>
+						<div ng-repeat="result in repoStatsSearchResult">
+							<p>Total commits from {{result.author.login}} - {{result.total}}</p>
+						</div>
+					</li>
+				</ul>
+
 			</li>
 	</section>
 </body>
