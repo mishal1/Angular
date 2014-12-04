@@ -3,9 +3,10 @@ require 'bundler/setup'
 
 class GithubReport<Sinatra::Base
 
-	get '/' do
+	set :public_folder, Proc.new { File.join(root, "..", "public")}
 
-		send_file 'index.html'
+	get '/' do
+		erb :index
 	end
 
 end

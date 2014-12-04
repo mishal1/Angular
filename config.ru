@@ -1,6 +1,4 @@
-require 'rubygems'
 
-
-require './app/server.rb'
+require File.join(File.dirname(__FILE__), './app/server')
 
 run GithubReport
