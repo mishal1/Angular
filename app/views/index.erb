@@ -14,15 +14,19 @@
 </head>
 
 <body ng-controller="GitUserSearchController">
+	<header>
+		<section class="container">
+			<h1>
+				Github Report Card
+			</h1>
+		</section>
+	</header>
+
 	<section class="container">
-		<h1>
-			Github Report Card
-		</h1>
 		<form class="form-horizontal">
 			<input class="form-control" type="text" ng-model="searchTerm" ng-change="doSearch()" ng-model-options="{updateOn: 'default blur', debounce: {'default':500, 'blur': 0} }">
 			<button class="btn btn-primary btn-block" ng-click="doSearch()">Search</button>
 		</form>
-
 		<ul class="list-group" ng-repeat="user in searchResult.items">
 			<li class="list-group-item">
 				<img class="img-circle" ng-src="{{user.avatar_url}}&s=50">

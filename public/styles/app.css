@@ -1,6 +1,15 @@
+header {
+  background: #337ab7;
+}
+
+header h1 {
+  color: #ffffff;
+}
+
 .form-control {
   margin-top: 20px;
   margin-bottom: 20px;
+  padding: 20px 30px;
 }
 
 .btn-block {
