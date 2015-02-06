@@ -1,0 +1,175 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'karma-jasmine' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 verbose cache add [ 'karma-jasmine', null ]
+5 verbose cache add name=undefined spec="karma-jasmine" args=["karma-jasmine",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'karma-jasmine',
+6 verbose parsed url   path: 'karma-jasmine',
+6 verbose parsed url   href: 'karma-jasmine' }
+7 silly lockFile df56d5e8-karma-jasmine karma-jasmine
+8 verbose lock karma-jasmine /Users/alanbridger/.npm/df56d5e8-karma-jasmine.lock
+9 silly lockFile df56d5e8-karma-jasmine karma-jasmine
+10 silly lockFile df56d5e8-karma-jasmine karma-jasmine
+11 verbose addNamed [ 'karma-jasmine', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile a9316641-karma-jasmine karma-jasmine@
+14 verbose lock karma-jasmine@ /Users/alanbridger/.npm/a9316641-karma-jasmine.lock
+15 silly addNameRange { name: 'karma-jasmine', range: '*', hasData: false }
+16 verbose request where is /karma-jasmine
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 086cf164624ae8d2
+19 verbose url raw /karma-jasmine
+20 verbose url resolving [ 'https://registry.npmjs.org/', './karma-jasmine' ]
+21 verbose url resolved https://registry.npmjs.org/karma-jasmine
+22 verbose request where is https://registry.npmjs.org/karma-jasmine
+23 info trying registry request attempt 1 at 14:49:53
+24 verbose etag "66RY0W4P6MFAVVPURN6OGTICZ"
+25 http GET https://registry.npmjs.org/karma-jasmine
+26 http 304 https://registry.npmjs.org/karma-jasmine
+27 silly registry.get cb [ 304,
+27 silly registry.get   { date: 'Fri, 06 Feb 2015 14:49:53 GMT',
+27 silly registry.get     server: 'Apache',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     'last-modified': 'Fri, 06 Feb 2015 14:49:53 GMT',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     etag: '"66RY0W4P6MFAVVPURN6OGTICZ"',
+27 silly registry.get     age: '9',
+27 silly registry.get     'x-served-by': 'cache-lcy1134-LCY',
+27 silly registry.get     'x-cache': 'HIT',
+27 silly registry.get     'x-cache-hits': '1',
+27 silly registry.get     'x-timer': 'S1423234193.676027,VS0,VE0',
+27 silly registry.get     vary: 'Accept',
+27 silly registry.get     'content-length': '0',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 verbose etag https://registry.npmjs.org/karma-jasmine from cache
+29 silly addNameRange number 2 { name: 'karma-jasmine', range: '*', hasData: true }
+30 silly addNameRange versions [ 'karma-jasmine',
+30 silly addNameRange   [ '0.0.1',
+30 silly addNameRange     '0.0.2',
+30 silly addNameRange     '0.0.3',
+30 silly addNameRange     '0.1.0',
+30 silly addNameRange     '0.1.1',
+30 silly addNameRange     '0.1.2',
+30 silly addNameRange     '0.1.3',
+30 silly addNameRange     '0.1.4',
+30 silly addNameRange     '0.1.5',
+30 silly addNameRange     '0.2.0',
+30 silly addNameRange     '0.2.1',
+30 silly addNameRange     '0.2.2',
+30 silly addNameRange     '0.2.3',
+30 silly addNameRange     '0.3.0',
+30 silly addNameRange     '0.3.1',
+30 silly addNameRange     '0.3.2',
+30 silly addNameRange     '0.3.3',
+30 silly addNameRange     '0.3.4',
+30 silly addNameRange     '0.3.5' ] ]
+31 verbose addNamed [ 'karma-jasmine', '0.3.5' ]
+32 verbose addNamed [ '0.3.5', '0.3.5' ]
+33 silly lockFile b510234b-karma-jasmine-0-3-5 karma-jasmine@0.3.5
+34 verbose lock karma-jasmine@0.3.5 /Users/alanbridger/.npm/b510234b-karma-jasmine-0-3-5.lock
+35 silly lockFile b510234b-karma-jasmine-0-3-5 karma-jasmine@0.3.5
+36 silly lockFile b510234b-karma-jasmine-0-3-5 karma-jasmine@0.3.5
+37 silly lockFile a9316641-karma-jasmine karma-jasmine@
+38 silly lockFile a9316641-karma-jasmine karma-jasmine@
+39 silly resolved [ { name: 'karma-jasmine',
+39 silly resolved     version: '0.3.5',
+39 silly resolved     description: 'A Karma plugin - adapter for Jasmine testing framework.',
+39 silly resolved     main: 'lib/index.js',
+39 silly resolved     scripts: { test: 'grunt test' },
+39 silly resolved     repository:
+39 silly resolved      { type: 'git',
+39 silly resolved        url: 'git://github.com/karma-runner/karma-jasmine.git' },
+39 silly resolved     keywords: [ 'karma-plugin', 'karma-adapter', 'jasmine' ],
+39 silly resolved     author: { name: 'Vojta Jina', email: 'vojta.jina@gmail.com' },
+39 silly resolved     dependencies: {},
+39 silly resolved     devDependencies:
+39 silly resolved      { grunt: '~0.4.1',
+39 silly resolved        'grunt-contrib-jshint': '~0.6',
+39 silly resolved        karma: '~0.12.0',
+39 silly resolved        'karma-jasmine': '~0.1.0',
+39 silly resolved        'karma-chrome-launcher': '~0.1.0',
+39 silly resolved        'karma-firefox-launcher': '~0.1.0',
+39 silly resolved        'grunt-karma': '~0.8.0',
+39 silly resolved        'grunt-auto-release': '~0.0.2',
+39 silly resolved        'grunt-npm': '~0.0.2',
+39 silly resolved        'grunt-bump': '~0.0.7',
+39 silly resolved        'jasmine-core': '~2.1.0' },
+39 silly resolved     peerDependencies: { karma: '>=0.9', 'jasmine-core': '*' },
+39 silly resolved     license: 'MIT',
+39 silly resolved     contributors:
+39 silly resolved      [ [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object],
+39 silly resolved        [Object] ],
+39 silly resolved     bugs: { url: 'https://github.com/karma-runner/karma-jasmine/issues' },
+39 silly resolved     homepage: 'https://github.com/karma-runner/karma-jasmine',
+39 silly resolved     _id: 'karma-jasmine@0.3.5',
+39 silly resolved     dist:
+39 silly resolved      { shasum: 'd6c7bce49f0747b59b557156502a28009a44055d',
+39 silly resolved        tarball: 'http://registry.npmjs.org/karma-jasmine/-/karma-jasmine-0.3.5.tgz' },
+39 silly resolved     _from: 'karma-jasmine@',
+39 silly resolved     _npmVersion: '1.4.4',
+39 silly resolved     _npmUser: { name: 'vojtajina', email: 'vojta.jina@gmail.com' },
+39 silly resolved     maintainers: [ [Object], [Object] ],
+39 silly resolved     directories: {},
+39 silly resolved     _shasum: 'd6c7bce49f0747b59b557156502a28009a44055d',
+39 silly resolved     _resolved: 'https://registry.npmjs.org/karma-jasmine/-/karma-jasmine-0.3.5.tgz',
+39 silly resolved     readme: 'ERROR: No README data found!' } ]
+40 info install karma-jasmine@0.3.5 into /usr/local/lib
+41 info installOne karma-jasmine@0.3.5
+42 verbose lib/node_modules/karma-jasmine unbuild
+43 verbose tar unpack /Users/alanbridger/.npm/karma-jasmine/0.3.5/package.tgz
+44 silly lockFile 5206b5eb-l-lib-node-modules-karma-jasmine tar:///usr/local/lib/node_modules/karma-jasmine
+45 verbose lock tar:///usr/local/lib/node_modules/karma-jasmine /Users/alanbridger/.npm/5206b5eb-l-lib-node-modules-karma-jasmine.lock
+46 silly lockFile de81d7b0--karma-jasmine-0-3-5-package-tgz tar:///Users/alanbridger/.npm/karma-jasmine/0.3.5/package.tgz
+47 verbose lock tar:///Users/alanbridger/.npm/karma-jasmine/0.3.5/package.tgz /Users/alanbridger/.npm/de81d7b0--karma-jasmine-0-3-5-package-tgz.lock
+48 silly gunzTarPerm modes [ '755', '644' ]
+49 error Error: EACCES, mkdir '/usr/local/lib/node_modules/karma-jasmine'
+49 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/karma-jasmine']
+49 error   errno: 3,
+49 error   code: 'EACCES',
+49 error   path: '/usr/local/lib/node_modules/karma-jasmine',
+49 error   fstream_type: 'Directory',
+49 error   fstream_path: '/usr/local/lib/node_modules/karma-jasmine',
+49 error   fstream_class: 'DirWriter',
+49 error   fstream_stack:
+49 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+49 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+49 error      'Object.oncomplete (fs.js:108:15)' ] }
+50 error Please try running this command again as root/Administrator.
+51 error System Darwin 14.1.0
+52 error command "node" "/usr/local/bin/npm" "install" "-g" "karma-jasmine"
+53 error cwd /Users/alanbridger/Code/angular-github-report
+54 error node -v v0.10.36
+55 error npm -v 1.4.28
+56 error path /usr/local/lib/node_modules/karma-jasmine
+57 error fstream_path /usr/local/lib/node_modules/karma-jasmine
+58 error fstream_type Directory
+59 error fstream_class DirWriter
+60 error code EACCES
+61 error errno 3
+62 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/karma-jasmine'
+63 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+63 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+63 error fstream_stack Object.oncomplete (fs.js:108:15)
+64 verbose exit [ 3, true ]

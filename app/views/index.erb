@@ -2,57 +2,49 @@
 <html lang="en" ng-app="GitUserSearch">
 
 <head>
-	<meta charset="utf-8">
-	<title>Github user search</title>
-	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-	<link rel="stylesheet" href="styles/app.css">
-	<script src="bower_components/jquery/dist/jquery.js"></script>
-	<script src="bower_components/angular/angular.js"></script>
-	<script src="bower_components/angular-resource/angular-resource.js"></script>
-	<script src="js/app.js"></script>
-	<script src="js/gitUserSearchController.js"></script>
-	<script src="js/gitRepoSearchController.js"></script>
+  <meta charset="utf-8">
+  <title>Github user search</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="styles/app.css">
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/gitUserSearchController.js"></script>
+  <script src="js/gitRepoSearchController.js"></script>
 </head>
-
-<body ng-controller="GitUserSearchController">
-	<header>
-		<section class="container">
-			<h1>
-				Github Report Card
-			</h1>
-		</section>
-	</header>
-
-	<section class="container">
-		<form class="form-horizontal">
-			<input class="form-control" type="text" ng-model="searchTerm" ng-change="doUserSearch()" ng-model-options="{updateOn: 'default blur', debounce: {'default':500, 'blur': 0} }">
-			<button class="btn btn-primary btn-block" ng-click="doUserSearch()">Search</button>
-		</form>
-		<ul class="list-group" ng-repeat="user in userSearchResult.items">
-			<li class="list-group-item" ng-controller="GitRepoListController">
-
-				<img class="img-circle" ng-src="{{user.avatar_url}}&s=50">
-
-				<h2>
-					<a ng-href="{{user.html_url}}">
-						{{user.login}}
-					</a>
-				</h2>
-
-				<button class="btn btn-primary" ng-click="getRepoList(user.login)">Show More</button>
-
-				<ul class="list-group list-unstyled" ng-repeat="repo in repoList">
-					<li ng-controller="GitRepoSearchController" ng-init="doRepoSearch(user.login, repo.name)">
-						<h3 ng-init="doRepoStatsSearch(user.login, repo.name)">{{repo.name}}</h3>
-						<p>Stars: {{repoSearchResult.stargazers_count}}</p>
-						<div ng-repeat="result in repoStatsSearchResult">
-							<p>Total commits from {{result.author.login}} - {{result.total}}</p>
-						</div>
-					</li>
-				</ul>
-
-			</li>
-	</section>
-</body>
-
+  <body ng-controller="GitUserSearchController">
+    <header>
+      <section class="container">
+        <h1>
+          Github Report Card
+        </h1>
+      </section>
+    </header>
+    <section class="container">
+      <form class="form-horizontal">
+        <input class="form-control" type="text" ng-model="searchTerm" ng-change="doUserSearch()" ng-model-options="{updateOn: 'default blur', debounce: {'default':500, 'blur': 0} }">
+        <button class="btn btn-primary btn-block" ng-click="doUserSearch()">Search</button>
+      </form>
+      <ul class="list-group" ng-repeat="user in userSearchResult.items">
+        <li class="list-group-item" ng-controller="GitRepoListController">
+          <img class="img-circle" ng-src="{{user.avatar_url}}&s=50">
+          <h2>
+            <a ng-href="{{user.html_url}}">
+              {{user.login}}
+            </a>
+          </h2>
+          <button class="btn btn-primary" ng-click="getRepoList(user.login)">Show More</button>
+          <ul class="list-group list-unstyled" ng-repeat="repo in repoList">
+            <li ng-controller="GitRepoSearchController" ng-init="doRepoSearch(user.login, repo.name)">
+              <h3 ng-init="doRepoStatsSearch(user.login, repo.name)">{{repo.name}}</h3>
+              <p>Stars: {{repoSearchResult.stargazers_count}}</p>
+              <div ng-repeat="result in repoStatsSearchResult">
+                <p>Total commits from {{result.author.login}} - {{result.total}}</p>
+              </div>
+            </li>
+          </ul>
+        </li>
+    </section>
+  </body>
 </html>
