@@ -9,5 +9,4 @@ githubUserSearch.controller('GitUserSearchController', function($scope, $resourc
       client_secret: '3bbf10d29a017cbcd20b87614217396ff67debe6'
     });
   };
-
 });
