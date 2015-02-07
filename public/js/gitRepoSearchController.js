@@ -23,7 +23,6 @@ githubUserSearch.controller('GitRepoSearchController', function($scope, $resourc
         'query': {method: 'GET', isArray:false}
       });
     };
-
 });
 
 githubUserSearch.controller('GitRepoListController', function($scope, $resource) {
@@ -39,5 +38,4 @@ githubUserSearch.controller('GitRepoListController', function($scope, $resource)
       'query': {method: 'GET', isArray:true}
     });
   };
-
 });
