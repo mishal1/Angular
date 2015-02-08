@@ -11,7 +11,7 @@ Features:
 
 ##Learning Objectives
 - Angular
-- Testing Angular with Karma
+- Testing Angular with Karma 
 
 ##Technology Used
 - Javascript
