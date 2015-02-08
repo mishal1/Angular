@@ -10,6 +10,8 @@ Features:
 - Clicking 'Show More' will show a list of a given user's repos and the number of stars for each
 
 ##Learning Objectives
+- Angular
+- Testing Angular with Karma
 
 ##Technology Used
 - Javascript
@@ -17,4 +19,5 @@ Features:
 - Ruby
 - Sinatra
 - Karma
+- Github API
 
